@@ -95,7 +95,7 @@ Let us see if the data has loaded properly.
 
 We can see at first glance that there are many null values and column names are not standardized.Also there many unnecessary columns which need to be dropped.We also need to create new columns and edit some rows to make this data suitable for analysis.
 
-**Dropping unnecessary columns**
+### Dropping unnecessary columns
 
 `ALTER TABLE` sales
 
@@ -118,7 +118,7 @@ Data after dropping columns:
 
 ![Capture](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/30a5f6b4-0c15-41c2-a0b5-1d7b76390283)
 
-**Removing duplicates**
+### Removing duplicates
 
 Data count before removing duplicates.
 
@@ -158,7 +158,7 @@ Data count after removing the duplicates.
 
 ![Dup](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/dcd559a1-5542-4b01-b18a-4a63f5bc3400)
 
-**Filling null values**
+### Filling null values
 
   `SELECT` * 
   
@@ -194,7 +194,7 @@ Data count after removing the duplicates.
   
 ![null](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/f5d1a954-369d-4ae4-a320-545bc0a8dc9a)
 
-**Changing B2B column**
+### Changing B2B column
 
 `SELECT` B2B 
 
@@ -224,7 +224,7 @@ Data count after removing the duplicates.
 
 ![Capture](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/ec22c039-19ac-495b-b45f-5e45762b9bca)
 
-**Changing column name of Amount and converting to $**
+### Changing column name of Amount and converting to $
 
 `ALTER TABLE` sales
 
@@ -241,7 +241,7 @@ UPDATE sales
 
 ![Capture](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/c7571291-06b8-42e9-9c8a-91ff61bcb1e0)
 
-**Deleting March data**
+### Deleting March data
 
 `SELECT` DISTINCT date 
 
@@ -266,7 +266,7 @@ UPDATE sales
 
 ![Capture](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/994e1f98-404e-47bd-86bf-af97caa6bc27)
 
-**Creating a Month column**
+### Creating a Month column
 >Extracting the **month** part from the date column and inserting it into the new **Month** column.This Month column will be really useful during analyzing the data.
 
 `ALTER` TABLE sales
@@ -283,7 +283,7 @@ UPDATE sales
 
 ![Capture](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/59d5c39d-4389-467d-a799-0648087d92d1)
 
-**Standarzing the Ship City and State column values**
+### Standarzing the Ship City and State column values
 
 `SELECT DISTINCT` ship_state
 `FROM` sales
