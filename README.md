@@ -439,10 +439,49 @@ UPDATE sales
 
 ![Capture5](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/1b9ead2e-b12a-4b77-b045-fd8a838737ea)
 
+### Standardizing all the column names
+
+`ALTER TABLE` sales
+
+`RENAME COLUMN` OrderID TO order_ID  ,
+
+`RENAME COLUMN` Status TO ship_status ,
+
+`RENAME COLUMN` Fulfilment TO fullfilment ,
+
+`RENAME COLUMN` ship_service_level TO service_level ,
+
+`RENAME COLUMN` Style TO style ,
+
+`RENAME COLUMN` SKU TO sku ,
+
+`RENAME COLUMN` Category TO product_category ,
+
+`RENAME COLUMN` Size TO size ,
+
+`RENAME COLUMN` ASIN TO asin ,
+
+`RENAME COLUMN` CourierStatus TO courier_ship_status,
+
+`RENAME COLUMN` Qty TO order_quantity,
+
+`RENAME COLUMN` ship_city TO city,
+
+`RENAME COLUMN` ship_state TO state,
+
+`RENAME COLUMN `ship_postal_code TO zip,
+
+`RENAME COLUMN` promotion_ids TO promotion,
+
+`RENAME COLUMN` Month TO month;
+>The **Date** column name cannot be changed to **date** because **date** is a keyword in SQL.
+
 `SELECT` *
+
 `FROM` amazon.sales;
 
-![Capture](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/d64a2960-a63d-4b2c-a4fb-a3246766d9de)
+![Capture](https://github.com/freudeg0/PortfolioProject-DataCleaning/assets/93113869/636b33d8-f348-43e0-b69d-474a6ea94951)
+
 
 
 **Now this table is more usable for analysis.**
