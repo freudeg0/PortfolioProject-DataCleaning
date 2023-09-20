@@ -7,6 +7,8 @@ In the modern data-driven business landscape, the quality of data is paramount. 
 
 -MySQL Workbench
 
+## Data Source: [View Here](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data)
+
 ## Data Cleaning
 
 Let's take a look at the data first.
